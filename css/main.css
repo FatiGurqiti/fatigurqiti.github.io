@@ -1,0 +1,416 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  background-color: #1b1b1b;
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  font-family: Martian Mono;
+  font-weight: lighter;
+  font-size: 18px;
+  opacity: 1;
+  color: #fff;
+  text-align: left;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  color: rgba(122, 228, 88, 1);
+  gap: 5%;
+  font-family: Martian Mono;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+}
+
+.navbar ul li {
+  margin-left: 4%;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.navbar ul li a:hover {
+  color: #00ff00;
+}
+
+.profile-info {
+  flex: 1;
+  text-align: left;
+}
+
+.name {
+  width: 40%;
+  color: rgba(123, 123, 122, 1);
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  font-family: Martian Mono;
+  font-weight: Regular;
+  font-size: 27px;
+  opacity: 1;
+  text-align: left;
+}
+
+.title {
+  width: 50%;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-family: Outfit;
+  font-weight: Regular;
+  font-size: 82px;
+  opacity: 1;
+  text-align: left;
+
+}
+
+.buttons {
+  height: 15%;
+  width: 40%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  overflow: hidden;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+
+}
+
+.projects-btn {
+  width: 30%;
+  height: 60%;
+  background-color: #7AE458;
+  font-family: Martian Mono;
+  font-weight: Regular;
+  border: 1px solid #2A4322;
+  color: #2A4322;
+}
+
+.cv-btn {
+  width: 30%;
+  height: 60%;
+  margin-left: 5%;
+  background-color: transparent;
+  font-family: Martian Mono;
+  font-weight: Regular;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.buttons button a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.social-icons {
+  height: 15%;
+  width: 40%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 75%;
+  left: 5%;
+  overflow: hidden;
+  display: flex;
+}
+
+.social-icons a i img {
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin-left: 2%;
+}
+
+.social-icons :hover {
+  transform: scale(0.9);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.quote {
+  width: 80%;
+  color: rgba(123, 123, 122, 1);
+  position: absolute;
+  top: 85%;
+  left: 5%;
+  font-family: Martian Mono;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: left;
+}
+
+.profile-pic {
+  flex: 1;
+  opacity: 1;
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  overflow: hidden;
+  max-width: 60%;
+  height: auto;
+  display: block;
+}
+
+.profile-pic img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.about-text {
+  color: #fff;
+  margin-top: 15%;
+  padding-left: 5%;
+  font-family: 'Martian Mono', monospace;
+  font-weight: 400;
+  /* 'Regular' isn't a valid weight in CSS */
+  font-size: 27px;
+  opacity: 1;
+  text-align: center;
+}
+
+.about-my-work {
+  width: 99%;
+  color: rgba(123, 123, 122, 1);
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10%;
+  padding-left: 3%;
+  font-family: Martian Mono;
+  font-weight: Regular;
+  font-size: 27px;
+  opacity: 1;
+  text-align: left;
+}
+
+/* Card Container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  top: 70%;
+}
+
+.card-container a {
+  text-decoration: dashed;
+  color: #fff;
+}
+
+/* Individual Card */
+.card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #272B2D;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  font-family: Martian Mono;
+  font-weight: Regular;
+  font-size: 22px;
+  text-align: center;
+  color: #fff;
+  margin: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* Image Styling */
+.card-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #4CAF50;
+  margin-bottom: 15px;
+}
+
+/* Card Content */
+.card-content h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.card-content p {
+  font-size: 0.6em;
+  line-height: 1.5;
+  color: #bbb;
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: scale(1.05);
+}
+
+.motification-container {
+  margin-top: 3%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.motification-round {
+  width: 15%;
+  height: auto;
+}
+
+.motification-get-notified {
+  margin-top: 3%;
+  font-size: 2em;
+  font-family: Outfit;
+  font-weight: Regular;
+  color: #fff;
+}
+
+.android-download-buttons{
+  margin-left: 10%;
+  gap: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.motification-content {
+  width: 95%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.motification-text-content {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.motification-mobile-image {
+  width: 25%;
+  height: auto;
+}
+
+.motification-title {
+  font-family: Outfit;
+  font-weight: Regular;
+  text-align: center;
+  display: flex;
+  color: #fff;
+  font-size: 4em;
+}
+
+.motification-description {
+  font-family: Martian Mono;
+  font-weight: Regular;
+  text-align: center;
+  display: flex;
+  color: #9B9B99;
+  font-size: 2em;
+  margin-bottom: 15%;
+}
+
+.eec-description {
+  margin-top: 5%;
+}
+
+.motification-mac-image {
+  width: 60%;
+  height: auto;
+}
+
+.motification-download {
+  width: 500px;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.motification-download img {
+  width: 50%;
+  height: auto
+}
+
+.motification-download:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    justify-content: center;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .motification-container {
+    margin-top: 5%;
+  }
+
+  .motification-round {
+    width: 20%;
+    height: auto;
+  }
+
+  .motification-android-get-it-button {
+    font-size: 1em;
+  }
+}
